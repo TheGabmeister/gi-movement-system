@@ -106,7 +106,7 @@ namespace GenshinImpactMovementSystem
                 dashDirection = GetTargetRotationDirection(stateMachine.ReusableData.CurrentTargetRotation.y);
             }
 
-            stateMachine.Player.Rigidbody.velocity = dashDirection * GetMovementSpeed(false);
+            stateMachine.Player.Rigidbody.linearVelocity = dashDirection * GetMovementSpeed(false);
         }
 
         private void UpdateConsecutiveDashes()
